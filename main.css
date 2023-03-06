@@ -1,0 +1,149 @@
+/*блок для логотипа шифа */
+.navbar-logo {
+    display: inline-block;
+    float: left;
+    margin: 0 0 0 -10px;
+}
+.navbar-logo > img {
+    display: block;
+    float: left;
+    width: 130px;
+    height: auto;
+}
+.navbar-logo2 {
+    display: inline-block;
+    float: right;
+    margin: 0 0 0 -5px;
+}
+.navbar-logo2 > img {
+    display: block;
+    float: right;
+    width: 130px;
+    height: auto;
+}
+/*следующий блок лента горизонтальная с меню */
+/*это лента */
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+.top-menu {
+  background: rgba(255,255,255,.5);
+  box-shadow: 3px 0 7px rgba(0,0,0,.3);
+  padding: 20px;
+}
+.top-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar-logo {display: inline-block;}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.navbar-logo2 {display: inline-block;}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+/*это текст */
+.menu-main li {display: inline-block;}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 120px;
+  padding-left: 40px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: #f85002fb;
+  transition:.3s linear;
+  text-align: center;
+}
+/*это ромбик над текстом  */
+.menu-main a:before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: #e604a9;
+  position: absolute;
+  left: 50%;
+  transform: rotate(45deg) translateX(6.5px);
+  opacity: 0;
+  transition: .3s linear;
+
+}
+.menu-main a:hover:before {opacity: 1;}
+@media (max-width: 660px) {
+.menu-main {
+  float: none;
+  padding-top: 20px;
+}
+.top-menu {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.menu-main a {padding: 0 10px;}
+.menu-main a:before {transform: rotate(45deg) translateX(-6px);}
+}
+@media (max-width: 600px) {
+.menu-main li {display: block;}
+}
+
+  /*след блок для основной информации на глайно  странице , Блок с текстом на основной странице, содержание */
+
+  .osnova {
+     padding: 0 1000px 0 80px;
+  }
+  
+  h1 {
+     margin-bottom: 20px;
+     color: black;
+     font-family:serif ;
+     font-size: 4rem;
+  }
+  p{
+    margin-bottom: 20px;
+     color: black;
+     font-family:serif ;
+     font-size: 1.3rem;
+  }
+   /*след блок для основной информации на глайно  странице , Блок с картинкой и текстом после нее */
+   .picture_of_honey {
+    background: url(https://img.kapital.kz/jI-X4epd_iI/bG9jYWw6Ly8vZS8wLzAvNS8wLzIzYzdlOGIwZGE0ZmM2OGE5YWM0NmZjYjM0Yi5qcGc); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 196px; /* Ширина рисунка */
+    height: 183px; /*  Высота рисунка */
+    float: left; /* Обтекание картинки по левому краю */
+    padding-left: 10px; /* Отступ слева */
+    padding-bottom: 10px; /* Отступ снизу */
+   }
+   .picture_of_honey:hover {
+    background: url(https://img.freepik.com/premium-photo/chamomile-flowers-and-honey-on-wooden-garden-table_275983-223.jpg); /* Путь к файлу с заменяемым рисунком  */
+    float: left; /* Обтекание картинки по левому краю */
+    padding-left: 10px; /* Отступ слева */
+    padding-bottom: 10px; /* Отступ снизу */
+   }
+
+      /*след блок для основной информации на глайно  странице , Блок с текстом на основной странице, содержание */
+
+  .osnova2 {
+    padding: 0 1000px 0 80px;
+ }
+ 
+ h1 {
+    margin-bottom: 20px;
+    color: black;
+    font-family:serif ;
+    font-size: 4rem;
+ }
+ p{
+   margin-bottom: 20px;
+    color: black;
+    font-family:serif ;
+    font-size: 1.3rem;
+ }
